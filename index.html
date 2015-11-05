@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Json Tag Demo</title>
+  <title>xml.js Demo</title>
   <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.19.0.css">
 </head>
 <body>
@@ -45,24 +45,6 @@
     QUnit.test( "quick", function( assert ) {
       assert.equal( xml("p#1.c"), '<p id="1" class="c"></p>', 'We expect xml("p#1.c") is <p id="1" class="c"></p>');
     });
-/*
-
-    //INJECTION
-    var test_fn = function(){
-      return x+y;
-    }
-
-    function context(fn){
-      var x = 3;
-      var y = 2;
-
-      return fn();
-    }
-
-    console.log(
-      "exec: "+context(test_fn)
-    );
-*/
   </script>
 </body>
 </html>
