@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>xml.js Demo</title>
-  <link rel="stylesheet" href="//code.jquery.com/qunit/qunit-1.19.0.css">
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.19.0.css">
 </head>
 <body>
   <div id="qunit"></div>
   <div id="qunit-fixture"></div>
-  <script src="//code.jquery.com/qunit/qunit-1.19.0.js"></script>
+  <script src="http://code.jquery.com/qunit/qunit-1.19.0.js"></script>
   <script type="text/javascript" src="xml.js"></script>
   <script>
     QUnit.test( "invalid tag test", function( assert ) {
@@ -48,59 +48,3 @@
   </script>
 </body>
 </html>
-<!--
-<html>
-    <head>
-        <title>Json Tag Demo</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <script type="text/javascript" src="json_tag.js"></script>
-        <style>
-            .yes{
-                color: limegreen;
-                font-weight: bolder;
-            }
-            .no{
-                color: tomato;
-                font-weight: bolder;
-            }
-            .bordered{
-                border: 5px cornflowerblue solid;
-            }
-        </style>
-    </head>
-    <body>
-	Json Tag Demo
-        <br>
-        <code>
-        <script>
-            function printTest(str, bool){
-                var x = bool?'yes':'&nbsp;no';
-                var c = bool?'yes':'no';
-                document.write( '<br><span class="'+c+'">'+x+'</span>&nbsp;&nbsp;&nbsp;<b>'+str+'?</b>' );
-            }
-
-            printTest('xml()===undefined',xml()===undefined);
-            printTest('xml(null)===undefined',xml(null)===undefined);
-            printTest('xml(0.1)===undefined',xml(0.1)===undefined);
-            printTest('xml([1,2])===undefined',xml([1,2])===undefined);
-
-            printTest('xml("p")!=null',xml("p")!=null);
-
-            var x = table({class:"bordered"},[
-                tr([
-                    td({},""),
-                    td({},""),
-                    td({},"")
-                ]),
-                tr([
-                    td({},""),
-                    td({},""),
-                    td({},"")
-                ])
-            ]);
-            document.write(x);
-        </script>
-        </code>
-    </body>
-</html>
--->
