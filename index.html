@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>xml.js Demo</title>
+  <title>xml.js Test</title>
   <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.19.0.css">
 </head>
 <body>
@@ -43,7 +43,9 @@
         assert.equal( xml("p",{id:1, class:'c'},true), '<p id="1" class="c">true</p>', 'We expect is');
     });
     QUnit.test( "quick", function( assert ) {
-      assert.equal( xml("p#1.c"), '<p id="1" class="c"></p>', 'We expect xml("p#1.c") is <p id="1" class="c"></p>');
+      assert.equal( xml("p#1"), '<p id="1"></p>', 'We expect xml("p#1") is <p id="1"></p>');
+      assert.equal( xml("p.c d"), '<p class="c d"></p>', 'We expect xml("p.c d") is <p  class="c d"></p>');
+      assert.equal( xml("p#1.c d"), '<p id="1" class="c d"></p>', 'We expect xml("p#1.c d") is <p id="1" class="c d"></p>');
     });
   </script>
 </body>
